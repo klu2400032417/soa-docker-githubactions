@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: docker
-      POSTGRES_DB: exam_2400032417
+      POSTGRES_DB: campaign-klustudentdb
     ports:
       - "5432:5432"
     volumes:
