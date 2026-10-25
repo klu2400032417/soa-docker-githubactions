@@ -1,4 +1,4 @@
-package com.klef.soa.exam.configuration;
+package com.klef.soa.docker.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

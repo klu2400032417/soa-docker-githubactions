@@ -1,4 +1,4 @@
-package com.klef.soa.exam.entity;
+package com.klef.soa.docker.entity;
 
 
 import jakarta.persistence.Column;

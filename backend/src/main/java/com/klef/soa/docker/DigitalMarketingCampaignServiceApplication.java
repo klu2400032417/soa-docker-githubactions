@@ -1,4 +1,4 @@
-package com.klef.soa.exam;
+package com.klef.soa.docker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

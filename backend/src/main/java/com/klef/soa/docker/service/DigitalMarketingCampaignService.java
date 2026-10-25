@@ -1,9 +1,9 @@
-package com.klef.soa.exam.service;
+package com.klef.soa.docker.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.klef.soa.exam.entity.DigitalMarketingCampaign;
+import com.klef.soa.docker.entity.DigitalMarketingCampaign;
 
 public interface DigitalMarketingCampaignService {
 	DigitalMarketingCampaign addCampaign(DigitalMarketingCampaign d);

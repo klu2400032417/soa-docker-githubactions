@@ -1,5 +1,5 @@
 
-package com.klef.soa.exam.controller;
+package com.klef.soa.docker.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.klef.soa.exam.entity.DigitalMarketingCampaign;
-import com.klef.soa.exam.service.DigitalMarketingCampaignService;
+import com.klef.soa.docker.entity.DigitalMarketingCampaign;
+import com.klef.soa.docker.service.DigitalMarketingCampaignService;
 
 @RestController
 @RequestMapping("/DigitalMarketingCampaign")

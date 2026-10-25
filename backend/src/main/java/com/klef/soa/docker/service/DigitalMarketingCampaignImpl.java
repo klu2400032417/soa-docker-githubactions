@@ -1,4 +1,4 @@
-package com.klef.soa.exam.service;
+package com.klef.soa.docker.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.klef.soa.exam.entity.DigitalMarketingCampaign;
-import com.klef.soa.exam.repository.DigitalMarketingCampaignRepository;
+import com.klef.soa.docker.entity.DigitalMarketingCampaign;
+import com.klef.soa.docker.repository.DigitalMarketingCampaignRepository;
 
 @Service
 public class DigitalMarketingCampaignImpl implements DigitalMarketingCampaignService{
