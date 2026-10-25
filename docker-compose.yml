@@ -15,7 +15,7 @@ services:
 
   backend:
     image: ashmitha05/docker-backend-2400032417:latest
-    container_name: campaign-docker-springboot
+    container_name: docker-springboot
     ports:
       - "8081:8081"
     depends_on:
@@ -26,7 +26,7 @@ services:
 
   frontend:
     image: ashmitha05/docker-frontend-2400032417:latest
-    container_name: campaign-docker-react
+    container_name: docker-react
     ports:
       - "3000:80"
     depends_on:
