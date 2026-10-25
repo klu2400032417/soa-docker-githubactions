@@ -1,4 +1,5 @@
-const API_BASE_URL = '/DigitalMarketingCampaign';
+const API_BASE_URL =
+  `${import.meta.env.VITE_BACKEND_URL}/DigitalMarketingCampaign`;
 
 async function request(path, options = {}) {
   let response;
