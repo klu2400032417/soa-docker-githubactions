@@ -1,0 +1,42 @@
+services:
+  postgresdb:
+    image: postgres:16-alpine
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: campaign-klustudentdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - springboot-postgres-net
+
+  backend:
+    image: ashmitha05/digital-marketing-campaign-backend:latest
+    container_name: campaign-docker-springboot
+    ports:
+      - "8081:8081"
+    depends_on:
+      - postgresdb
+    restart: on-failure
+    networks:
+      - springboot-postgres-net
+
+  frontend:
+    image: ashmitha05/digital-marketing-campaign-frontend:latest
+    container_name: campaign-docker-react
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: on-failure
+    networks:
+      - springboot-postgres-net
+
+volumes:
+  postgres_data:
+
+networks:
+  springboot-postgres-net:
